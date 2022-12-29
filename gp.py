@@ -22,7 +22,7 @@ def predict_disease(input_data, scaler):
 def main():
     st.set_page_config(page_title="Growing Pain Predictor", page_icon=":hospital:")
 
-    st.markdown("<h1 style='text-align: center; color: black;'>Test I am here to facilitate Growing Pain (GP) diagnosis by using machine learning.</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: black;'>I am here to facilitate Growing Pain (GP) diagnosis by using machine learning.</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center; color: black;'>Please fill the form below and click the predict button to see how likely your patient has GP.</h2>", unsafe_allow_html=True)
 
     st.markdown("<br/><hr>", unsafe_allow_html=True)
