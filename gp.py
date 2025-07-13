@@ -33,7 +33,7 @@ def main():
     inputs = []
 
     # Create a two-column form layout
-    c1, c2 = st.beta_columns([1, 1])
+    c1, c2 = st.columns([1, 1])
 
     with c1:
         currentAge = st.number_input("Current Age", min_value=0, max_value=216, help="in months")
@@ -68,7 +68,7 @@ def main():
            'LocalizationOnBack', 'LocalizationOnShoulder'), help="You can select more than one option.")
 
     # Create a three-column form layout
-    c3, c4, c5 = st.beta_columns([1, 1, 1])
+    c3, c4, c5 = st.columns([1, 1, 1])
 
     with c3:
         unilatOrBilat = st.radio("Affected sides", ('Unilateral', 'Bilateral'))
@@ -85,7 +85,7 @@ def main():
 
     st.markdown("<hr>", unsafe_allow_html=True)
 
-    left_button, right_button, _ = st.beta_columns([1,1,6])
+    left_button, right_button, _ = st.columns([1,1,6])
     predicted = False
     with left_button:
         if st.button("Predict"):
