@@ -3,9 +3,9 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-import SessionState
+#import SessionState
 
-session = SessionState.get(run_id=0)
+#session = SessionState.get(run_id=0)
 
 def predict_disease(input_data, scaler):
     """get probabilities of each label"""
